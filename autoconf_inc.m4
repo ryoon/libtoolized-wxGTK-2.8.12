@@ -512,12 +512,6 @@ dnl ### begin block 20_COND_SHARED_0_wxUSE_ODBC_builtin[wx.bkl] ###
         COND_SHARED_0_wxUSE_ODBC_builtin=""
     fi
     AC_SUBST(COND_SHARED_0_wxUSE_ODBC_builtin)
-dnl ### begin block 20_COND_SHARED_0_wxUSE_REGEX_builtin[wx.bkl] ###
-    COND_SHARED_0_wxUSE_REGEX_builtin="#"
-    if test "x$SHARED" = "x0" -a "x$wxUSE_REGEX" = "xbuiltin" ; then
-        COND_SHARED_0_wxUSE_REGEX_builtin=""
-    fi
-    AC_SUBST(COND_SHARED_0_wxUSE_REGEX_builtin)
 dnl ### begin block 20_COND_SHARED_0_wxUSE_ZLIB_builtin[wx.bkl] ###
     COND_SHARED_0_wxUSE_ZLIB_builtin="#"
     if test "x$SHARED" = "x0" -a "x$wxUSE_ZLIB" = "xbuiltin" ; then
