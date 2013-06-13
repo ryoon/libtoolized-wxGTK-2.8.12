@@ -352,148 +352,148 @@ mmediadll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(MMEDIADLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_mmedia$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_MMEDIA
 
 mmediadll_cdunix.lo: $(srcdir)/cdunix.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdunix.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdunix.cpp
 
 mmediadll_sndesd.lo: $(srcdir)/sndesd.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndesd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndesd.cpp
 
 mmediadll_sndoss.lo: $(srcdir)/sndoss.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndoss.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndoss.cpp
 
 mmediadll_vidxanm.lo: $(srcdir)/vidxanm.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidxanm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidxanm.cpp
 
 mmediadll_cdwin.lo: $(srcdir)/cdwin.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdwin.cpp
 
 mmediadll_sndwin.lo: $(srcdir)/sndwin.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndwin.cpp
 
 mmediadll_vidwin.lo: $(srcdir)/vidwin.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidwin.cpp
 
 mmediadll_cdbase.lo: $(srcdir)/cdbase.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/cdbase.cpp
 
 mmediadll_g711.lo: $(srcdir)/g711.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g711.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g711.cpp
 
 mmediadll_g721.lo: $(srcdir)/g721.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g721.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g721.cpp
 
 mmediadll_g723_24.lo: $(srcdir)/g723_24.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g723_24.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g723_24.cpp
 
 mmediadll_g723_40.lo: $(srcdir)/g723_40.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g723_40.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g723_40.cpp
 
 mmediadll_g72x.lo: $(srcdir)/g72x.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g72x.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/g72x.cpp
 
 mmediadll_sndaiff.lo: $(srcdir)/sndaiff.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndaiff.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndaiff.cpp
 
 mmediadll_sndbase.lo: $(srcdir)/sndbase.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndbase.cpp
 
 mmediadll_sndcodec.lo: $(srcdir)/sndcodec.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndcodec.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndcodec.cpp
 
 mmediadll_sndcpcm.lo: $(srcdir)/sndcpcm.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndcpcm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndcpcm.cpp
 
 mmediadll_sndfile.lo: $(srcdir)/sndfile.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndfile.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndfile.cpp
 
 mmediadll_sndg72x.lo: $(srcdir)/sndg72x.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndg72x.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndg72x.cpp
 
 mmediadll_sndmsad.lo: $(srcdir)/sndmsad.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndmsad.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndmsad.cpp
 
 mmediadll_sndpcm.lo: $(srcdir)/sndpcm.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndpcm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndpcm.cpp
 
 mmediadll_sndulaw.lo: $(srcdir)/sndulaw.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndulaw.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndulaw.cpp
 
 mmediadll_sndwav.lo: $(srcdir)/sndwav.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndwav.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/sndwav.cpp
 
 mmediadll_vidbase.lo: $(srcdir)/vidbase.cpp $(MMEDIADLL_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIADLL_CXXFLAGS) $(srcdir)/vidbase.cpp
 
 mmedialib_cdunix.lo: $(srcdir)/cdunix.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdunix.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdunix.cpp
 
 mmedialib_sndesd.lo: $(srcdir)/sndesd.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndesd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndesd.cpp
 
 mmedialib_sndoss.lo: $(srcdir)/sndoss.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndoss.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndoss.cpp
 
 mmedialib_vidxanm.lo: $(srcdir)/vidxanm.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidxanm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidxanm.cpp
 
 mmedialib_cdwin.lo: $(srcdir)/cdwin.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdwin.cpp
 
 mmedialib_sndwin.lo: $(srcdir)/sndwin.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndwin.cpp
 
 mmedialib_vidwin.lo: $(srcdir)/vidwin.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidwin.cpp
 
 mmedialib_cdbase.lo: $(srcdir)/cdbase.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/cdbase.cpp
 
 mmedialib_g711.lo: $(srcdir)/g711.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g711.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g711.cpp
 
 mmedialib_g721.lo: $(srcdir)/g721.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g721.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g721.cpp
 
 mmedialib_g723_24.lo: $(srcdir)/g723_24.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g723_24.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g723_24.cpp
 
 mmedialib_g723_40.lo: $(srcdir)/g723_40.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g723_40.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g723_40.cpp
 
 mmedialib_g72x.lo: $(srcdir)/g72x.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g72x.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/g72x.cpp
 
 mmedialib_sndaiff.lo: $(srcdir)/sndaiff.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndaiff.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndaiff.cpp
 
 mmedialib_sndbase.lo: $(srcdir)/sndbase.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndbase.cpp
 
 mmedialib_sndcodec.lo: $(srcdir)/sndcodec.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndcodec.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndcodec.cpp
 
 mmedialib_sndcpcm.lo: $(srcdir)/sndcpcm.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndcpcm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndcpcm.cpp
 
 mmedialib_sndfile.lo: $(srcdir)/sndfile.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndfile.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndfile.cpp
 
 mmedialib_sndg72x.lo: $(srcdir)/sndg72x.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndg72x.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndg72x.cpp
 
 mmedialib_sndmsad.lo: $(srcdir)/sndmsad.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndmsad.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndmsad.cpp
 
 mmedialib_sndpcm.lo: $(srcdir)/sndpcm.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndpcm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndpcm.cpp
 
 mmedialib_sndulaw.lo: $(srcdir)/sndulaw.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndulaw.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndulaw.cpp
 
 mmedialib_sndwav.lo: $(srcdir)/sndwav.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndwav.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/sndwav.cpp
 
 mmedialib_vidbase.lo: $(srcdir)/vidbase.cpp $(MMEDIALIB_ODEP)
-	$(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidbase.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MMEDIALIB_CXXFLAGS) $(srcdir)/vidbase.cpp
 
 
 # Include dependency info, if present:

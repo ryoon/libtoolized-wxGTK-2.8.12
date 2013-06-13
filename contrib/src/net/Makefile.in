@@ -305,22 +305,22 @@ netutilsdll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(NETUTILSDLL_O
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_netutils$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_NETUTILS
 
 netutilsdll_email.lo: $(srcdir)/email.cpp $(NETUTILSDLL_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/email.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/email.cpp
 
 netutilsdll_smapi.lo: $(srcdir)/smapi.cpp $(NETUTILSDLL_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/smapi.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/smapi.cpp
 
 netutilsdll_web.lo: $(srcdir)/web.cpp $(NETUTILSDLL_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/web.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSDLL_CXXFLAGS) $(srcdir)/web.cpp
 
 netutilslib_email.lo: $(srcdir)/email.cpp $(NETUTILSLIB_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/email.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/email.cpp
 
 netutilslib_smapi.lo: $(srcdir)/smapi.cpp $(NETUTILSLIB_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/smapi.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/smapi.cpp
 
 netutilslib_web.lo: $(srcdir)/web.cpp $(NETUTILSLIB_ODEP)
-	$(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/web.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(NETUTILSLIB_CXXFLAGS) $(srcdir)/web.cpp
 
 
 # Include dependency info, if present:

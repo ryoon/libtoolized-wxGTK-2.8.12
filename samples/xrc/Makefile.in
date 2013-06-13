@@ -216,16 +216,16 @@ data:
 	done
 
 xrcdemo_xrcdemo.lo: $(srcdir)/xrcdemo.cpp
-	$(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/xrcdemo.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/xrcdemo.cpp
 
 xrcdemo_myframe.lo: $(srcdir)/myframe.cpp
-	$(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/myframe.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/myframe.cpp
 
 xrcdemo_derivdlg.lo: $(srcdir)/derivdlg.cpp
-	$(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/derivdlg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/derivdlg.cpp
 
 xrcdemo_custclas.lo: $(srcdir)/custclas.cpp
-	$(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/custclas.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(XRCDEMO_CXXFLAGS) $(srcdir)/custclas.cpp
 
 xrcdemo_xrcdemo_rc.lo: $(srcdir)/xrcdemo.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

@@ -210,7 +210,7 @@ data:
 	done
 
 sound_sound.lo: $(srcdir)/sound.cpp
-	$(CXXC) -c -o $@ $(SOUND_CXXFLAGS) $(srcdir)/sound.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(SOUND_CXXFLAGS) $(srcdir)/sound.cpp
 
 sound_sound_rc.lo: $(srcdir)/sound.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

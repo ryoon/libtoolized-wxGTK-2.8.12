@@ -198,7 +198,7 @@ sashtest$(EXEEXT): $(SASHTEST_OBJECTS) $(__sashtest___win32rc)
 @COND_PLATFORM_MACOSX_1@sashtest_bundle: $(____sashtest_BUNDLE_TGT_REF_DEP)
 
 sashtest_sashtest.lo: $(srcdir)/sashtest.cpp
-	$(CXXC) -c -o $@ $(SASHTEST_CXXFLAGS) $(srcdir)/sashtest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(SASHTEST_CXXFLAGS) $(srcdir)/sashtest.cpp
 
 sashtest_sashtest_rc.lo: $(srcdir)/sashtest.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

@@ -167,7 +167,7 @@ uninstall_hhp2cached:
 	rm -f $(DESTDIR)$(bindir)/hhp2cached$(EXEEXT)
 
 hhp2cached_hhp2cached.lo: $(srcdir)/hhp2cached.cpp
-	$(CXXC) -c -o $@ $(HHP2CACHED_CXXFLAGS) $(srcdir)/hhp2cached.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HHP2CACHED_CXXFLAGS) $(srcdir)/hhp2cached.cpp
 
 hhp2cached_hhp2cached_rc.lo: $(srcdir)/hhp2cached.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

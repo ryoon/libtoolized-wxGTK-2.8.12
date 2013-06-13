@@ -202,7 +202,7 @@ data:
 	done
 
 helpview_helpview.lo: $(srcdir)/helpview.cpp
-	$(CXXC) -c -o $@ $(HELPVIEW_CXXFLAGS) $(srcdir)/helpview.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPVIEW_CXXFLAGS) $(srcdir)/helpview.cpp
 
 helpview_helpview_rc.lo: $(srcdir)/helpview.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

@@ -303,22 +303,22 @@ foldbardll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(FOLDBARDLL_ODE
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_foldbar$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_FOLDBAR
 
 foldbardll_captionbar.lo: $(srcdir)/captionbar.cpp $(FOLDBARDLL_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/captionbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/captionbar.cpp
 
 foldbardll_foldpanelbar.lo: $(srcdir)/foldpanelbar.cpp $(FOLDBARDLL_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/foldpanelbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/foldpanelbar.cpp
 
 foldbardll_foldpanelitem.lo: $(srcdir)/foldpanelitem.cpp $(FOLDBARDLL_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/foldpanelitem.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARDLL_CXXFLAGS) $(srcdir)/foldpanelitem.cpp
 
 foldbarlib_captionbar.lo: $(srcdir)/captionbar.cpp $(FOLDBARLIB_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/captionbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/captionbar.cpp
 
 foldbarlib_foldpanelbar.lo: $(srcdir)/foldpanelbar.cpp $(FOLDBARLIB_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/foldpanelbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/foldpanelbar.cpp
 
 foldbarlib_foldpanelitem.lo: $(srcdir)/foldpanelitem.cpp $(FOLDBARLIB_ODEP)
-	$(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/foldpanelitem.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FOLDBARLIB_CXXFLAGS) $(srcdir)/foldpanelitem.cpp
 
 
 # Include dependency info, if present:

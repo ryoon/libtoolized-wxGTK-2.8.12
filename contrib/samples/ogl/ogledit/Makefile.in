@@ -189,16 +189,16 @@ ogledit$(EXEEXT): $(OGLEDIT_OBJECTS) $(__ogledit___win32rc)
 @COND_PLATFORM_MACOSX_1@ogledit_bundle: $(____ogledit_BUNDLE_TGT_REF_DEP)
 
 ogledit_ogledit.lo: $(srcdir)/ogledit.cpp
-	$(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/ogledit.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/ogledit.cpp
 
 ogledit_doc.lo: $(srcdir)/doc.cpp
-	$(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/doc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/doc.cpp
 
 ogledit_view.lo: $(srcdir)/view.cpp
-	$(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/view.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/view.cpp
 
 ogledit_palette.lo: $(srcdir)/palette.cpp
-	$(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/palette.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLEDIT_CXXFLAGS) $(srcdir)/palette.cpp
 
 ogledit_ogledit_rc.lo: $(srcdir)/ogledit.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../../include

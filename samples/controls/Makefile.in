@@ -197,7 +197,7 @@ data:
 	done
 
 controls_controls.lo: $(srcdir)/controls.cpp
-	$(CXXC) -c -o $@ $(CONTROLS_CXXFLAGS) $(srcdir)/controls.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONTROLS_CXXFLAGS) $(srcdir)/controls.cpp
 
 controls_controls_rc.lo: $(srcdir)/controls.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

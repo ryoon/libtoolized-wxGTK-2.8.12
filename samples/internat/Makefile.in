@@ -317,7 +317,7 @@ ja_JP.EUC-JP:
 	done
 
 internat_internat.lo: $(srcdir)/internat.cpp
-	$(CXXC) -c -o $@ $(INTERNAT_CXXFLAGS) $(srcdir)/internat.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(INTERNAT_CXXFLAGS) $(srcdir)/internat.cpp
 
 internat_internat_rc.lo: $(srcdir)/internat.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

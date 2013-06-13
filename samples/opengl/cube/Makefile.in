@@ -188,7 +188,7 @@ distclean: clean
 @COND_PLATFORM_MACOSX_1_USE_OPENGL_1@cube_bundle: $(____cube_BUNDLE_TGT_REF_DEP)
 
 cube_cube.lo: $(srcdir)/cube.cpp
-	$(CXXC) -c -o $@ $(CUBE_CXXFLAGS) $(srcdir)/cube.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CUBE_CXXFLAGS) $(srcdir)/cube.cpp
 
 cube_cube_rc.lo: $(srcdir)/cube.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

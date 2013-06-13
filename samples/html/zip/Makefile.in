@@ -201,7 +201,7 @@ data:
 	done
 
 zip_zip.lo: $(srcdir)/zip.cpp
-	$(CXXC) -c -o $@ $(ZIP_CXXFLAGS) $(srcdir)/zip.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(ZIP_CXXFLAGS) $(srcdir)/zip.cpp
 
 zip_zip_rc.lo: $(srcdir)/zip.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

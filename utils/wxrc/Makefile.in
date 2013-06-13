@@ -126,7 +126,7 @@ distclean: clean
 @COND_USE_XRC_1@	rm -f $(DESTDIR)$(bindir)/wxrc$(EXEEXT)
 
 wxrc_wxrc.lo: $(srcdir)/wxrc.cpp
-	$(CXXC) -c -o $@ $(WXRC_CXXFLAGS) $(srcdir)/wxrc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WXRC_CXXFLAGS) $(srcdir)/wxrc.cpp
 
 
 # Include dependency info, if present:

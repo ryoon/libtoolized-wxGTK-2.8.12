@@ -298,10 +298,10 @@ plotdll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(PLOTDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_plot$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_PLOT
 
 plotdll_plot.lo: $(srcdir)/plot.cpp $(PLOTDLL_ODEP)
-	$(CXXC) -c -o $@ $(PLOTDLL_CXXFLAGS) $(srcdir)/plot.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PLOTDLL_CXXFLAGS) $(srcdir)/plot.cpp
 
 plotlib_plot.lo: $(srcdir)/plot.cpp $(PLOTLIB_ODEP)
-	$(CXXC) -c -o $@ $(PLOTLIB_CXXFLAGS) $(srcdir)/plot.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PLOTLIB_CXXFLAGS) $(srcdir)/plot.cpp
 
 
 # Include dependency info, if present:

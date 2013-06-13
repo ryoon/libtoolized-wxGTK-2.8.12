@@ -211,13 +211,13 @@ data:
 	done
 
 penguin_penguin.lo: $(srcdir)/penguin.cpp
-	$(CXXC) -c -o $@ $(PENGUIN_CXXFLAGS) $(srcdir)/penguin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PENGUIN_CXXFLAGS) $(srcdir)/penguin.cpp
 
 penguin_dxfrenderer.lo: $(srcdir)/dxfrenderer.cpp
-	$(CXXC) -c -o $@ $(PENGUIN_CXXFLAGS) $(srcdir)/dxfrenderer.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PENGUIN_CXXFLAGS) $(srcdir)/dxfrenderer.cpp
 
 penguin_trackball.lo: $(srcdir)/trackball.c
-	$(CCC) -c -o $@ $(PENGUIN_CFLAGS) $(srcdir)/trackball.c
+	 ${LIBTOOL} --mode=compile --tag=CC $(CCC) -c -o $@ $(PENGUIN_CFLAGS) $(srcdir)/trackball.c
 
 penguin_penguin_rc.lo: $(srcdir)/penguin.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

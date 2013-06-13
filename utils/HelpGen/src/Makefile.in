@@ -109,28 +109,28 @@ HelpGen$(EXEEXT): $(HELPGEN_OBJECTS)
 	$(__HelpGen___mac_setfilecmd)
 
 HelpGen_HelpGen.lo: $(srcdir)/HelpGen.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/HelpGen.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/HelpGen.cpp
 
 HelpGen_cjparser.lo: $(srcdir)/cjparser.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/cjparser.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/cjparser.cpp
 
 HelpGen_docripper.lo: $(srcdir)/docripper.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/docripper.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/docripper.cpp
 
 HelpGen_ifcontext.lo: $(srcdir)/ifcontext.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/ifcontext.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/ifcontext.cpp
 
 HelpGen_markup.lo: $(srcdir)/markup.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/markup.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/markup.cpp
 
 HelpGen_scriptbinder.lo: $(srcdir)/scriptbinder.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/scriptbinder.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/scriptbinder.cpp
 
 HelpGen_sourcepainter.lo: $(srcdir)/sourcepainter.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/sourcepainter.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/sourcepainter.cpp
 
 HelpGen_srcparser.lo: $(srcdir)/srcparser.cpp
-	$(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/srcparser.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(HELPGEN_CXXFLAGS) $(srcdir)/srcparser.cpp
 
 
 # Include dependency info, if present:

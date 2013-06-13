@@ -186,7 +186,7 @@ proplist$(EXEEXT): $(PROPLIST_OBJECTS) $(__proplist___win32rc)
 @COND_PLATFORM_MACOSX_1@proplist_bundle: $(____proplist_BUNDLE_TGT_REF_DEP)
 
 proplist_proplist.lo: $(srcdir)/proplist.cpp
-	$(CXXC) -c -o $@ $(PROPLIST_CXXFLAGS) $(srcdir)/proplist.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PROPLIST_CXXFLAGS) $(srcdir)/proplist.cpp
 
 proplist_proplist_rc.lo: $(srcdir)/proplist.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../../include

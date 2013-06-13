@@ -328,106 +328,106 @@ fldll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(FLDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_fl$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_FL
 
 fldll_antiflickpl.lo: $(srcdir)/antiflickpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/antiflickpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/antiflickpl.cpp
 
 fldll_bardragpl.lo: $(srcdir)/bardragpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/bardragpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/bardragpl.cpp
 
 fldll_barhintspl.lo: $(srcdir)/barhintspl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/barhintspl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/barhintspl.cpp
 
 fldll_cbcustom.lo: $(srcdir)/cbcustom.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/cbcustom.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/cbcustom.cpp
 
 fldll_controlbar.lo: $(srcdir)/controlbar.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/controlbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/controlbar.cpp
 
 fldll_dyntbar.lo: $(srcdir)/dyntbar.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/dyntbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/dyntbar.cpp
 
 fldll_dyntbarhnd.lo: $(srcdir)/dyntbarhnd.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/dyntbarhnd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/dyntbarhnd.cpp
 
 fldll_frmview.lo: $(srcdir)/frmview.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/frmview.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/frmview.cpp
 
 fldll_garbagec.lo: $(srcdir)/garbagec.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/garbagec.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/garbagec.cpp
 
 fldll_gcupdatesmgr.lo: $(srcdir)/gcupdatesmgr.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/gcupdatesmgr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/gcupdatesmgr.cpp
 
 fldll_hintanimpl.lo: $(srcdir)/hintanimpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/hintanimpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/hintanimpl.cpp
 
 fldll_newbmpbtn.lo: $(srcdir)/newbmpbtn.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/newbmpbtn.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/newbmpbtn.cpp
 
 fldll_panedrawpl.lo: $(srcdir)/panedrawpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/panedrawpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/panedrawpl.cpp
 
 fldll_rowdragpl.lo: $(srcdir)/rowdragpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/rowdragpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/rowdragpl.cpp
 
 fldll_rowlayoutpl.lo: $(srcdir)/rowlayoutpl.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/rowlayoutpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/rowlayoutpl.cpp
 
 fldll_toolwnd.lo: $(srcdir)/toolwnd.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/toolwnd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/toolwnd.cpp
 
 fldll_updatesmgr.lo: $(srcdir)/updatesmgr.cpp $(FLDLL_ODEP)
-	$(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/updatesmgr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLDLL_CXXFLAGS) $(srcdir)/updatesmgr.cpp
 
 fllib_antiflickpl.lo: $(srcdir)/antiflickpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/antiflickpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/antiflickpl.cpp
 
 fllib_bardragpl.lo: $(srcdir)/bardragpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/bardragpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/bardragpl.cpp
 
 fllib_barhintspl.lo: $(srcdir)/barhintspl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/barhintspl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/barhintspl.cpp
 
 fllib_cbcustom.lo: $(srcdir)/cbcustom.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/cbcustom.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/cbcustom.cpp
 
 fllib_controlbar.lo: $(srcdir)/controlbar.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/controlbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/controlbar.cpp
 
 fllib_dyntbar.lo: $(srcdir)/dyntbar.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/dyntbar.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/dyntbar.cpp
 
 fllib_dyntbarhnd.lo: $(srcdir)/dyntbarhnd.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/dyntbarhnd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/dyntbarhnd.cpp
 
 fllib_frmview.lo: $(srcdir)/frmview.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/frmview.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/frmview.cpp
 
 fllib_garbagec.lo: $(srcdir)/garbagec.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/garbagec.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/garbagec.cpp
 
 fllib_gcupdatesmgr.lo: $(srcdir)/gcupdatesmgr.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/gcupdatesmgr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/gcupdatesmgr.cpp
 
 fllib_hintanimpl.lo: $(srcdir)/hintanimpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/hintanimpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/hintanimpl.cpp
 
 fllib_newbmpbtn.lo: $(srcdir)/newbmpbtn.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/newbmpbtn.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/newbmpbtn.cpp
 
 fllib_panedrawpl.lo: $(srcdir)/panedrawpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/panedrawpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/panedrawpl.cpp
 
 fllib_rowdragpl.lo: $(srcdir)/rowdragpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/rowdragpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/rowdragpl.cpp
 
 fllib_rowlayoutpl.lo: $(srcdir)/rowlayoutpl.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/rowlayoutpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/rowlayoutpl.cpp
 
 fllib_toolwnd.lo: $(srcdir)/toolwnd.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/toolwnd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/toolwnd.cpp
 
 fllib_updatesmgr.lo: $(srcdir)/updatesmgr.cpp $(FLLIB_ODEP)
-	$(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/updatesmgr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FLLIB_CXXFLAGS) $(srcdir)/updatesmgr.cpp
 
 
 # Include dependency info, if present:

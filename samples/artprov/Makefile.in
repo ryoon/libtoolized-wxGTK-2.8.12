@@ -186,10 +186,10 @@ arttest$(EXEEXT): $(ARTTEST_OBJECTS) $(__arttest___win32rc)
 @COND_PLATFORM_MACOSX_1@arttest_bundle: $(____arttest_BUNDLE_TGT_REF_DEP)
 
 arttest_arttest.lo: $(srcdir)/arttest.cpp
-	$(CXXC) -c -o $@ $(ARTTEST_CXXFLAGS) $(srcdir)/arttest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(ARTTEST_CXXFLAGS) $(srcdir)/arttest.cpp
 
 arttest_artbrows.lo: $(srcdir)/artbrows.cpp
-	$(CXXC) -c -o $@ $(ARTTEST_CXXFLAGS) $(srcdir)/artbrows.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(ARTTEST_CXXFLAGS) $(srcdir)/artbrows.cpp
 
 arttest_arttest_rc.lo: $(srcdir)/arttest.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

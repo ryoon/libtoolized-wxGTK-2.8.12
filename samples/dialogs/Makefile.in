@@ -219,34 +219,34 @@ data:
 	done
 
 dialogs_dialogs.lo: $(srcdir)/dialogs.cpp
-	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/dialogs.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/dialogs.cpp
 
 @COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@dialogs_colrdlgg.lo: $(srcdir)/../../src/generic/colrdlgg.cpp
-@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/colrdlgg.cpp
+@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/colrdlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@dialogs_colrdlgg.lo: $(srcdir)/../../src/generic/colrdlgg.cpp
-@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/colrdlgg.cpp
+@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/colrdlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@dialogs_dirdlgg.lo: $(srcdir)/../../src/generic/dirdlgg.cpp
-@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/dirdlgg.cpp
+@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/dirdlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@dialogs_dirdlgg.lo: $(srcdir)/../../src/generic/dirdlgg.cpp
-@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/dirdlgg.cpp
+@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/dirdlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@dialogs_filedlgg.lo: $(srcdir)/../../src/generic/filedlgg.cpp
-@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
+@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@dialogs_filedlgg.lo: $(srcdir)/../../src/generic/filedlgg.cpp
-@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
+@COND_SHARED_0_TOOLKIT_MAC_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@dialogs_filedlgg.lo: $(srcdir)/../../src/generic/filedlgg.cpp
-@COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
+@COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/filedlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@dialogs_fontdlgg.lo: $(srcdir)/../../src/generic/fontdlgg.cpp
-@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/fontdlgg.cpp
+@COND_SHARED_0_TOOLKIT_MSW_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/fontdlgg.cpp
 
 @COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@dialogs_fontdlgg.lo: $(srcdir)/../../src/generic/fontdlgg.cpp
-@COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@	$(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/fontdlgg.cpp
+@COND_SHARED_0_TOOLKIT_PM_WXUNIV_0@	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DIALOGS_CXXFLAGS) $(srcdir)/../../src/generic/fontdlgg.cpp
 
 dialogs_dialogs_rc.lo: $(srcdir)/dialogs.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

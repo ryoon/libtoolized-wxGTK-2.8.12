@@ -208,55 +208,55 @@ uninstall_tex2rtf:
 @COND_USE_GUI_1@	rm -f $(DESTDIR)$(bindir)/tex2rtf_gui$(EXEEXT)
 
 tex2rtf_tex2rtf.lo: $(srcdir)/tex2rtf.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/tex2rtf.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/tex2rtf.cpp
 
 tex2rtf_tex2any.lo: $(srcdir)/tex2any.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/tex2any.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/tex2any.cpp
 
 tex2rtf_texutils.lo: $(srcdir)/texutils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/texutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/texutils.cpp
 
 tex2rtf_rtfutils.lo: $(srcdir)/rtfutils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/rtfutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/rtfutils.cpp
 
 tex2rtf_xlputils.lo: $(srcdir)/xlputils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/xlputils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/xlputils.cpp
 
 tex2rtf_htmlutil.lo: $(srcdir)/htmlutil.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/htmlutil.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/htmlutil.cpp
 
 tex2rtf_readshg.lo: $(srcdir)/readshg.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/readshg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/readshg.cpp
 
 tex2rtf_table.lo: $(srcdir)/table.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/table.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_CXXFLAGS) $(srcdir)/table.cpp
 
 tex2rtf_gui_sample_rc.lo: $(srcdir)/../../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_5)   $(__EXCEPTIONS_DEFINE_p_5) $(__RTTI_DEFINE_p_5) $(__THREAD_DEFINE_p_5)   --include-dir $(srcdir) $(__DLLFLAG_p_5) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
 
 tex2rtf_gui_tex2rtf.lo: $(srcdir)/tex2rtf.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/tex2rtf.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/tex2rtf.cpp
 
 tex2rtf_gui_tex2any.lo: $(srcdir)/tex2any.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/tex2any.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/tex2any.cpp
 
 tex2rtf_gui_texutils.lo: $(srcdir)/texutils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/texutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/texutils.cpp
 
 tex2rtf_gui_rtfutils.lo: $(srcdir)/rtfutils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/rtfutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/rtfutils.cpp
 
 tex2rtf_gui_xlputils.lo: $(srcdir)/xlputils.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/xlputils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/xlputils.cpp
 
 tex2rtf_gui_htmlutil.lo: $(srcdir)/htmlutil.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/htmlutil.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/htmlutil.cpp
 
 tex2rtf_gui_readshg.lo: $(srcdir)/readshg.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/readshg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/readshg.cpp
 
 tex2rtf_gui_table.lo: $(srcdir)/table.cpp
-	$(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/table.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEX2RTF_GUI_CXXFLAGS) $(srcdir)/table.cpp
 
 
 # Include dependency info, if present:

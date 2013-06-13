@@ -220,34 +220,34 @@ data:
 	done
 
 studio_studio.lo: $(srcdir)/studio.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/studio.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/studio.cpp
 
 studio_doc.lo: $(srcdir)/doc.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/doc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/doc.cpp
 
 studio_shapes.lo: $(srcdir)/shapes.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/shapes.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/shapes.cpp
 
 studio_symbols.lo: $(srcdir)/symbols.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/symbols.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/symbols.cpp
 
 studio_view.lo: $(srcdir)/view.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/view.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/view.cpp
 
 studio_cspalette.lo: $(srcdir)/cspalette.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/cspalette.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/cspalette.cpp
 
 studio_mainfrm.lo: $(srcdir)/mainfrm.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/mainfrm.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/mainfrm.cpp
 
 studio_project.lo: $(srcdir)/project.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/project.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/project.cpp
 
 studio_dialogs.lo: $(srcdir)/dialogs.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/dialogs.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/dialogs.cpp
 
 studio_csprint.lo: $(srcdir)/csprint.cpp
-	$(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/csprint.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STUDIO_CXXFLAGS) $(srcdir)/csprint.cpp
 
 studio_studio_rc.lo: $(srcdir)/studio.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../../include

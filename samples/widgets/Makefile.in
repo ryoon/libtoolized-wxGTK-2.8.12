@@ -220,73 +220,73 @@ widgets$(EXEEXT): $(WIDGETS_OBJECTS) $(__widgets___win32rc)
 @COND_PLATFORM_MACOSX_1@widgets_bundle: $(____widgets_BUNDLE_TGT_REF_DEP)
 
 widgets_bmpcombobox.lo: $(srcdir)/bmpcombobox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/bmpcombobox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/bmpcombobox.cpp
 
 widgets_button.lo: $(srcdir)/button.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/button.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/button.cpp
 
 widgets_checkbox.lo: $(srcdir)/checkbox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/checkbox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/checkbox.cpp
 
 widgets_clrpicker.lo: $(srcdir)/clrpicker.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/clrpicker.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/clrpicker.cpp
 
 widgets_combobox.lo: $(srcdir)/combobox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/combobox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/combobox.cpp
 
 widgets_datepick.lo: $(srcdir)/datepick.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/datepick.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/datepick.cpp
 
 widgets_dirctrl.lo: $(srcdir)/dirctrl.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/dirctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/dirctrl.cpp
 
 widgets_dirpicker.lo: $(srcdir)/dirpicker.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/dirpicker.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/dirpicker.cpp
 
 widgets_filepicker.lo: $(srcdir)/filepicker.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/filepicker.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/filepicker.cpp
 
 widgets_fontpicker.lo: $(srcdir)/fontpicker.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/fontpicker.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/fontpicker.cpp
 
 widgets_gauge.lo: $(srcdir)/gauge.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/gauge.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/gauge.cpp
 
 widgets_hyperlnk.lo: $(srcdir)/hyperlnk.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/hyperlnk.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/hyperlnk.cpp
 
 widgets_listbox.lo: $(srcdir)/listbox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/listbox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/listbox.cpp
 
 widgets_notebook.lo: $(srcdir)/notebook.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/notebook.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/notebook.cpp
 
 widgets_odcombobox.lo: $(srcdir)/odcombobox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/odcombobox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/odcombobox.cpp
 
 widgets_radiobox.lo: $(srcdir)/radiobox.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/radiobox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/radiobox.cpp
 
 widgets_searchctrl.lo: $(srcdir)/searchctrl.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/searchctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/searchctrl.cpp
 
 widgets_slider.lo: $(srcdir)/slider.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/slider.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/slider.cpp
 
 widgets_spinbtn.lo: $(srcdir)/spinbtn.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/spinbtn.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/spinbtn.cpp
 
 widgets_static.lo: $(srcdir)/static.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/static.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/static.cpp
 
 widgets_textctrl.lo: $(srcdir)/textctrl.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/textctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/textctrl.cpp
 
 widgets_toggle.lo: $(srcdir)/toggle.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/toggle.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/toggle.cpp
 
 widgets_widgets.lo: $(srcdir)/widgets.cpp
-	$(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/widgets.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(WIDGETS_CXXFLAGS) $(srcdir)/widgets.cpp
 
 widgets_sample_rc.lo: $(srcdir)/../sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

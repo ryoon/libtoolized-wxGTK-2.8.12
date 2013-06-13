@@ -332,52 +332,52 @@ deprecateddll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(DEPRECATEDD
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_deprecated$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_DEPRECATED --include-dir $(srcdir)
 
 deprecateddll_prop.lo: $(srcdir)/prop.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/prop.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/prop.cpp
 
 deprecateddll_propform.lo: $(srcdir)/propform.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/propform.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/propform.cpp
 
 deprecateddll_proplist.lo: $(srcdir)/proplist.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/proplist.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/proplist.cpp
 
 deprecateddll_resource.lo: $(srcdir)/resource.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/resource.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/resource.cpp
 
 deprecateddll_tbarsmpl.lo: $(srcdir)/tbarsmpl.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/tbarsmpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/tbarsmpl.cpp
 
 deprecateddll_treelay.lo: $(srcdir)/treelay.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/treelay.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/treelay.cpp
 
 deprecateddll_wxexpr.lo: $(srcdir)/wxexpr.cpp $(DEPRECATEDDLL_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/wxexpr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDDLL_CXXFLAGS) $(srcdir)/wxexpr.cpp
 
 deprecateddll_dosyacc.lo: $(srcdir)/dosyacc.c $(DEPRECATEDDLL_ODEP)
-	$(CCC) -c -o $@ $(DEPRECATEDDLL_CFLAGS) $(srcdir)/dosyacc.c
+	 ${LIBTOOL} --mode=compile --tag=CC $(CCC) -c -o $@ $(DEPRECATEDDLL_CFLAGS) $(srcdir)/dosyacc.c
 
 deprecatedlib_prop.lo: $(srcdir)/prop.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/prop.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/prop.cpp
 
 deprecatedlib_propform.lo: $(srcdir)/propform.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/propform.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/propform.cpp
 
 deprecatedlib_proplist.lo: $(srcdir)/proplist.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/proplist.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/proplist.cpp
 
 deprecatedlib_resource.lo: $(srcdir)/resource.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/resource.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/resource.cpp
 
 deprecatedlib_tbarsmpl.lo: $(srcdir)/tbarsmpl.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/tbarsmpl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/tbarsmpl.cpp
 
 deprecatedlib_treelay.lo: $(srcdir)/treelay.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/treelay.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/treelay.cpp
 
 deprecatedlib_wxexpr.lo: $(srcdir)/wxexpr.cpp $(DEPRECATEDLIB_ODEP)
-	$(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/wxexpr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DEPRECATEDLIB_CXXFLAGS) $(srcdir)/wxexpr.cpp
 
 deprecatedlib_dosyacc.lo: $(srcdir)/dosyacc.c $(DEPRECATEDLIB_ODEP)
-	$(CCC) -c -o $@ $(DEPRECATEDLIB_CFLAGS) $(srcdir)/dosyacc.c
+	 ${LIBTOOL} --mode=compile --tag=CC $(CCC) -c -o $@ $(DEPRECATEDLIB_CFLAGS) $(srcdir)/dosyacc.c
 
 
 # Include dependency info, if present:

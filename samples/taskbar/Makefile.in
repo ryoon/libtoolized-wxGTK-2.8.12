@@ -201,7 +201,7 @@ taskbar_sample_rc.lo: $(srcdir)/../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
 
 taskbar_tbtest.lo: $(srcdir)/tbtest.cpp
-	$(CXXC) -c -o $@ $(TASKBAR_CXXFLAGS) $(srcdir)/tbtest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TASKBAR_CXXFLAGS) $(srcdir)/tbtest.cpp
 
 
 # Include dependency info, if present:

@@ -197,7 +197,7 @@ data:
 	done
 
 ownerdrw_ownerdrw.lo: $(srcdir)/ownerdrw.cpp
-	$(CXXC) -c -o $@ $(OWNERDRW_CXXFLAGS) $(srcdir)/ownerdrw.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OWNERDRW_CXXFLAGS) $(srcdir)/ownerdrw.cpp
 
 ownerdrw_ownerdrw_rc.lo: $(srcdir)/ownerdrw.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

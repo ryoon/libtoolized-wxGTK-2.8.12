@@ -186,7 +186,7 @@ plot$(EXEEXT): $(PLOT_OBJECTS) $(__plot___win32rc)
 @COND_PLATFORM_MACOSX_1@plot_bundle: $(____plot_BUNDLE_TGT_REF_DEP)
 
 plot_plot.lo: $(srcdir)/plot.cpp
-	$(CXXC) -c -o $@ $(PLOT_CXXFLAGS) $(srcdir)/plot.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PLOT_CXXFLAGS) $(srcdir)/plot.cpp
 
 plot_plot_rc.lo: $(srcdir)/plot.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include

@@ -197,7 +197,7 @@ data:
 	done
 
 drawing_drawing.lo: $(srcdir)/drawing.cpp
-	$(CXXC) -c -o $@ $(DRAWING_CXXFLAGS) $(srcdir)/drawing.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DRAWING_CXXFLAGS) $(srcdir)/drawing.cpp
 
 drawing_drawing_rc.lo: $(srcdir)/drawing.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

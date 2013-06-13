@@ -238,28 +238,28 @@ data_help_png:
 	done
 
 dbbrowse_dbbrowse.lo: $(srcdir)/dbbrowse.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbbrowse.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbbrowse.cpp
 
 dbbrowse_doc.lo: $(srcdir)/doc.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/doc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/doc.cpp
 
 dbbrowse_pgmctrl.lo: $(srcdir)/pgmctrl.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/pgmctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/pgmctrl.cpp
 
 dbbrowse_tabpgwin.lo: $(srcdir)/tabpgwin.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/tabpgwin.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/tabpgwin.cpp
 
 dbbrowse_browsedb.lo: $(srcdir)/browsedb.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/browsedb.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/browsedb.cpp
 
 dbbrowse_dbtree.lo: $(srcdir)/dbtree.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbtree.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbtree.cpp
 
 dbbrowse_dbgrid.lo: $(srcdir)/dbgrid.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbgrid.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dbgrid.cpp
 
 dbbrowse_dlguser.lo: $(srcdir)/dlguser.cpp
-	$(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dlguser.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBBROWSE_CXXFLAGS) $(srcdir)/dlguser.cpp
 
 dbbrowse_dbbrowse_rc.lo: $(srcdir)/dbbrowse.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

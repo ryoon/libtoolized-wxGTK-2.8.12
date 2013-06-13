@@ -196,7 +196,7 @@ data:
 	done
 
 dnd_dnd.lo: $(srcdir)/dnd.cpp
-	$(CXXC) -c -o $@ $(DND_CXXFLAGS) $(srcdir)/dnd.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DND_CXXFLAGS) $(srcdir)/dnd.cpp
 
 dnd_dnd_rc.lo: $(srcdir)/dnd.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

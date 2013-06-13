@@ -451,49 +451,49 @@ gizmosdll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(GIZMOSDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_0)   $(__EXCEPTIONS_DEFINE_p_0) $(__RTTI_DEFINE_p_0) $(__THREAD_DEFINE_p_0)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_gizmos$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_GIZMOS
 
 gizmosdll_dynamicsash.lo: $(srcdir)/dynamicsash.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/dynamicsash.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/dynamicsash.cpp
 
 gizmosdll_editlbox.lo: $(srcdir)/editlbox.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/editlbox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/editlbox.cpp
 
 gizmosdll_ledctrl.lo: $(srcdir)/ledctrl.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/ledctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/ledctrl.cpp
 
 gizmosdll_multicell.lo: $(srcdir)/multicell.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/multicell.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/multicell.cpp
 
 gizmosdll_splittree.lo: $(srcdir)/splittree.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/splittree.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/splittree.cpp
 
 gizmosdll_statpict.lo: $(srcdir)/statpict.cpp $(GIZMOSDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/statpict.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSDLL_CXXFLAGS) $(srcdir)/statpict.cpp
 
 gizmos_xrcdll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(GIZMOS_XRCDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_0)   $(__EXCEPTIONS_DEFINE_p_0) $(__RTTI_DEFINE_p_0) $(__THREAD_DEFINE_p_0)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_gizmos_xrc$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_GIZMOS_XRC
 
 gizmos_xrcdll_xh_statpict.lo: $(srcdir)/xh_statpict.cpp $(GIZMOS_XRCDLL_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOS_XRCDLL_CXXFLAGS) $(srcdir)/xh_statpict.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOS_XRCDLL_CXXFLAGS) $(srcdir)/xh_statpict.cpp
 
 gizmoslib_dynamicsash.lo: $(srcdir)/dynamicsash.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/dynamicsash.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/dynamicsash.cpp
 
 gizmoslib_editlbox.lo: $(srcdir)/editlbox.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/editlbox.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/editlbox.cpp
 
 gizmoslib_ledctrl.lo: $(srcdir)/ledctrl.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/ledctrl.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/ledctrl.cpp
 
 gizmoslib_multicell.lo: $(srcdir)/multicell.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/multicell.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/multicell.cpp
 
 gizmoslib_splittree.lo: $(srcdir)/splittree.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/splittree.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/splittree.cpp
 
 gizmoslib_statpict.lo: $(srcdir)/statpict.cpp $(GIZMOSLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/statpict.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOSLIB_CXXFLAGS) $(srcdir)/statpict.cpp
 
 gizmos_xrclib_xh_statpict.lo: $(srcdir)/xh_statpict.cpp $(GIZMOS_XRCLIB_ODEP)
-	$(CXXC) -c -o $@ $(GIZMOS_XRCLIB_CXXFLAGS) $(srcdir)/xh_statpict.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(GIZMOS_XRCLIB_CXXFLAGS) $(srcdir)/xh_statpict.cpp
 
 
 # Include dependency info, if present:

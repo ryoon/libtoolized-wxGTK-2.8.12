@@ -185,7 +185,7 @@ exec$(EXEEXT): $(EXEC_OBJECTS) $(__exec___win32rc)
 @COND_PLATFORM_MACOSX_1@exec_bundle: $(____exec_BUNDLE_TGT_REF_DEP)
 
 exec_exec.lo: $(srcdir)/exec.cpp
-	$(CXXC) -c -o $@ $(EXEC_CXXFLAGS) $(srcdir)/exec.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(EXEC_CXXFLAGS) $(srcdir)/exec.cpp
 
 exec_exec_rc.lo: $(srcdir)/exec.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

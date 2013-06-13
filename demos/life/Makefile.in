@@ -200,16 +200,16 @@ data:
 	done
 
 life_life.lo: $(srcdir)/life.cpp
-	$(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/life.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/life.cpp
 
 life_dialogs.lo: $(srcdir)/dialogs.cpp
-	$(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/dialogs.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/dialogs.cpp
 
 life_game.lo: $(srcdir)/game.cpp
-	$(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/game.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/game.cpp
 
 life_reader.lo: $(srcdir)/reader.cpp
-	$(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/reader.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(LIFE_CXXFLAGS) $(srcdir)/reader.cpp
 
 life_life_rc.lo: $(srcdir)/life.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

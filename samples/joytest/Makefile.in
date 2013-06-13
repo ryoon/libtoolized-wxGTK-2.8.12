@@ -198,7 +198,7 @@ joytest$(EXEEXT): $(JOYTEST_OBJECTS) $(__joytest___win32rc)
 @COND_PLATFORM_MACOSX_1@joytest_bundle: $(____joytest_BUNDLE_TGT_REF_DEP)
 
 joytest_joytest.lo: $(srcdir)/joytest.cpp
-	$(CXXC) -c -o $@ $(JOYTEST_CXXFLAGS) $(srcdir)/joytest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(JOYTEST_CXXFLAGS) $(srcdir)/joytest.cpp
 
 joytest_joytest_rc.lo: $(srcdir)/joytest.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

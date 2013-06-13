@@ -249,13 +249,13 @@ ipcclient_sample_rc.lo: $(srcdir)/../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_6)   $(__EXCEPTIONS_DEFINE_p_6) $(__RTTI_DEFINE_p_6) $(__THREAD_DEFINE_p_6)   --include-dir $(srcdir) $(__DLLFLAG_p_6) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_0) --include-dir $(top_srcdir)/include
 
 ipcclient_client.lo: $(srcdir)/client.cpp
-	$(CXXC) -c -o $@ $(IPCCLIENT_CXXFLAGS) $(srcdir)/client.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(IPCCLIENT_CXXFLAGS) $(srcdir)/client.cpp
 
 ipcserver_sample_rc.lo: $(srcdir)/../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_6)   $(__EXCEPTIONS_DEFINE_p_6) $(__RTTI_DEFINE_p_6) $(__THREAD_DEFINE_p_6)   --include-dir $(srcdir) $(__DLLFLAG_p_6) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_0) --include-dir $(top_srcdir)/include
 
 ipcserver_server.lo: $(srcdir)/server.cpp
-	$(CXXC) -c -o $@ $(IPCSERVER_CXXFLAGS) $(srcdir)/server.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(IPCSERVER_CXXFLAGS) $(srcdir)/server.cpp
 
 
 # Include dependency info, if present:

@@ -208,10 +208,10 @@ distclean: clean
 @COND_PLATFORM_MACOSX_1_USE_ODBC_1@dbtest_bundle: $(____dbtest_BUNDLE_TGT_REF_DEP)
 
 dbtest_dbtest.lo: $(srcdir)/dbtest.cpp
-	$(CXXC) -c -o $@ $(DBTEST_CXXFLAGS) $(srcdir)/dbtest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBTEST_CXXFLAGS) $(srcdir)/dbtest.cpp
 
 dbtest_listdb.lo: $(srcdir)/listdb.cpp
-	$(CXXC) -c -o $@ $(DBTEST_CXXFLAGS) $(srcdir)/listdb.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(DBTEST_CXXFLAGS) $(srcdir)/listdb.cpp
 
 dbtest_dbtest_rc.lo: $(srcdir)/dbtest.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

@@ -124,7 +124,7 @@ data:
 	done
 
 console_console.lo: $(srcdir)/console.cpp
-	$(CXXC) -c -o $@ $(CONSOLE_CXXFLAGS) $(srcdir)/console.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONSOLE_CXXFLAGS) $(srcdir)/console.cpp
 
 
 # Include dependency info, if present:

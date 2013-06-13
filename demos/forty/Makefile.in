@@ -217,28 +217,28 @@ data:
 	done
 
 forty_forty.lo: $(srcdir)/forty.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/forty.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/forty.cpp
 
 forty_canvas.lo: $(srcdir)/canvas.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/canvas.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/canvas.cpp
 
 forty_card.lo: $(srcdir)/card.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/card.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/card.cpp
 
 forty_game.lo: $(srcdir)/game.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/game.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/game.cpp
 
 forty_pile.lo: $(srcdir)/pile.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/pile.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/pile.cpp
 
 forty_playerdg.lo: $(srcdir)/playerdg.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/playerdg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/playerdg.cpp
 
 forty_scoredg.lo: $(srcdir)/scoredg.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/scoredg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/scoredg.cpp
 
 forty_scorefil.lo: $(srcdir)/scorefil.cpp
-	$(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/scorefil.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FORTY_CXXFLAGS) $(srcdir)/scorefil.cpp
 
 forty_forty_rc.lo: $(srcdir)/forty.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

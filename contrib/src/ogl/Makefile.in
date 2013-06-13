@@ -318,76 +318,76 @@ ogldll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(OGLDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_ogl$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_OGL
 
 ogldll_basic2.lo: $(srcdir)/basic2.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/basic2.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/basic2.cpp
 
 ogldll_canvas.lo: $(srcdir)/canvas.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/canvas.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/canvas.cpp
 
 ogldll_divided.lo: $(srcdir)/divided.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/divided.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/divided.cpp
 
 ogldll_mfutils.lo: $(srcdir)/mfutils.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/mfutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/mfutils.cpp
 
 ogldll_oglmisc.lo: $(srcdir)/oglmisc.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/oglmisc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/oglmisc.cpp
 
 ogldll_basic.lo: $(srcdir)/basic.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/basic.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/basic.cpp
 
 ogldll_composit.lo: $(srcdir)/composit.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/composit.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/composit.cpp
 
 ogldll_drawn.lo: $(srcdir)/drawn.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/drawn.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/drawn.cpp
 
 ogldll_bmpshape.lo: $(srcdir)/bmpshape.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/bmpshape.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/bmpshape.cpp
 
 ogldll_constrnt.lo: $(srcdir)/constrnt.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/constrnt.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/constrnt.cpp
 
 ogldll_lines.lo: $(srcdir)/lines.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/lines.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/lines.cpp
 
 ogldll_ogldiag.lo: $(srcdir)/ogldiag.cpp $(OGLDLL_ODEP)
-	$(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/ogldiag.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLDLL_CXXFLAGS) $(srcdir)/ogldiag.cpp
 
 ogllib_basic2.lo: $(srcdir)/basic2.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/basic2.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/basic2.cpp
 
 ogllib_canvas.lo: $(srcdir)/canvas.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/canvas.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/canvas.cpp
 
 ogllib_divided.lo: $(srcdir)/divided.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/divided.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/divided.cpp
 
 ogllib_mfutils.lo: $(srcdir)/mfutils.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/mfutils.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/mfutils.cpp
 
 ogllib_oglmisc.lo: $(srcdir)/oglmisc.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/oglmisc.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/oglmisc.cpp
 
 ogllib_basic.lo: $(srcdir)/basic.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/basic.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/basic.cpp
 
 ogllib_composit.lo: $(srcdir)/composit.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/composit.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/composit.cpp
 
 ogllib_drawn.lo: $(srcdir)/drawn.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/drawn.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/drawn.cpp
 
 ogllib_bmpshape.lo: $(srcdir)/bmpshape.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/bmpshape.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/bmpshape.cpp
 
 ogllib_constrnt.lo: $(srcdir)/constrnt.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/constrnt.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/constrnt.cpp
 
 ogllib_lines.lo: $(srcdir)/lines.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/lines.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/lines.cpp
 
 ogllib_ogldiag.lo: $(srcdir)/ogldiag.cpp $(OGLLIB_ODEP)
-	$(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/ogldiag.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(OGLLIB_CXXFLAGS) $(srcdir)/ogldiag.cpp
 
 
 # Include dependency info, if present:

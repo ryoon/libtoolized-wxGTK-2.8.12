@@ -185,7 +185,7 @@ propsize$(EXEEXT): $(PROPSIZE_OBJECTS) $(__propsize___win32rc)
 @COND_PLATFORM_MACOSX_1@propsize_bundle: $(____propsize_BUNDLE_TGT_REF_DEP)
 
 propsize_propsize.lo: $(srcdir)/propsize.cpp
-	$(CXXC) -c -o $@ $(PROPSIZE_CXXFLAGS) $(srcdir)/propsize.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(PROPSIZE_CXXFLAGS) $(srcdir)/propsize.cpp
 
 propsize_propsize_rc.lo: $(srcdir)/propsize.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

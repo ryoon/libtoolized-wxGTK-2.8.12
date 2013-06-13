@@ -205,7 +205,7 @@ data:
 	done
 
 test_test.lo: $(srcdir)/test.cpp
-	$(CXXC) -c -o $@ $(TEST_CXXFLAGS) $(srcdir)/test.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(TEST_CXXFLAGS) $(srcdir)/test.cpp
 
 test_test_rc.lo: $(srcdir)/test.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

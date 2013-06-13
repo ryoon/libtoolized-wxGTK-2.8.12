@@ -171,16 +171,16 @@ uninstall_convertrc:
 	rm -f $(DESTDIR)$(bindir)/convertrc$(EXEEXT)
 
 convertrc_convert.lo: $(srcdir)/convert.cpp
-	$(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/convert.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/convert.cpp
 
 convertrc_rc2wxr.lo: $(srcdir)/rc2wxr.cpp
-	$(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/rc2wxr.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/rc2wxr.cpp
 
 convertrc_rc2xml.lo: $(srcdir)/rc2xml.cpp
-	$(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/rc2xml.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/rc2xml.cpp
 
 convertrc_wxr2xml.lo: $(srcdir)/wxr2xml.cpp
-	$(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/wxr2xml.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONVERTRC_CXXFLAGS) $(srcdir)/wxr2xml.cpp
 
 convertrc_wxconvert_rc.lo: $(srcdir)/wxconvert.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include

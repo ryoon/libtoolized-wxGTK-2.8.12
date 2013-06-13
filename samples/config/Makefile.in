@@ -185,7 +185,7 @@ conftest$(EXEEXT): $(CONFTEST_OBJECTS) $(__conftest___win32rc)
 @COND_PLATFORM_MACOSX_1@conftest_bundle: $(____conftest_BUNDLE_TGT_REF_DEP)
 
 conftest_conftest.lo: $(srcdir)/conftest.cpp
-	$(CXXC) -c -o $@ $(CONFTEST_CXXFLAGS) $(srcdir)/conftest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CONFTEST_CXXFLAGS) $(srcdir)/conftest.cpp
 
 conftest_conftest_rc.lo: $(srcdir)/conftest.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

@@ -192,7 +192,7 @@ multimon_test_sample_rc.lo: $(srcdir)/../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include
 
 multimon_test_multimon_test.lo: $(srcdir)/multimon_test.cpp
-	$(CXXC) -c -o $@ $(MULTIMON_TEST_CXXFLAGS) $(srcdir)/multimon_test.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(MULTIMON_TEST_CXXFLAGS) $(srcdir)/multimon_test.cpp
 
 
 # Include dependency info, if present:

@@ -199,7 +199,7 @@ extended$(EXEEXT): $(EXTENDED_OBJECTS) $(__extended___win32rc)
 @COND_PLATFORM_MACOSX_1@extended_bundle: $(____extended_BUNDLE_TGT_REF_DEP)
 
 extended_extended.lo: $(srcdir)/extended.cpp
-	$(CXXC) -c -o $@ $(EXTENDED_CXXFLAGS) $(srcdir)/extended.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(EXTENDED_CXXFLAGS) $(srcdir)/extended.cpp
 
 extended_extended_rc.lo: $(srcdir)/extended.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../../include

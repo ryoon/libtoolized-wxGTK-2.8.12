@@ -246,13 +246,13 @@ server$(EXEEXT): $(SERVER_OBJECTS) $(__server___win32rc)
 @COND_PLATFORM_MACOSX_1@server_bundle: $(____server_BUNDLE_TGT_REF_DEP)
 
 client_client.lo: $(srcdir)/client.cpp
-	$(CXXC) -c -o $@ $(CLIENT_CXXFLAGS) $(srcdir)/client.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CLIENT_CXXFLAGS) $(srcdir)/client.cpp
 
 client_client_rc.lo: $(srcdir)/client.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_6)   $(__EXCEPTIONS_DEFINE_p_6) $(__RTTI_DEFINE_p_6) $(__THREAD_DEFINE_p_6)   --include-dir $(srcdir) $(__DLLFLAG_p_6) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_0) --include-dir $(top_srcdir)/include
 
 server_server.lo: $(srcdir)/server.cpp
-	$(CXXC) -c -o $@ $(SERVER_CXXFLAGS) $(srcdir)/server.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(SERVER_CXXFLAGS) $(srcdir)/server.cpp
 
 server_server_rc.lo: $(srcdir)/server.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_6)   $(__EXCEPTIONS_DEFINE_p_6) $(__RTTI_DEFINE_p_6) $(__THREAD_DEFINE_p_6)   --include-dir $(srcdir) $(__DLLFLAG_p_6) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_0) --include-dir $(top_srcdir)/include

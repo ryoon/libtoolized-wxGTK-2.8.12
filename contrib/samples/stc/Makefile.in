@@ -203,13 +203,13 @@ stctest_sample_rc.lo: $(srcdir)/../../../samples/sample.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include
 
 stctest_stctest.lo: $(srcdir)/stctest.cpp
-	$(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/stctest.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/stctest.cpp
 
 stctest_edit.lo: $(srcdir)/edit.cpp
-	$(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/edit.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/edit.cpp
 
 stctest_prefs.lo: $(srcdir)/prefs.cpp
-	$(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/prefs.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(STCTEST_CXXFLAGS) $(srcdir)/prefs.cpp
 
 
 # Include dependency info, if present:

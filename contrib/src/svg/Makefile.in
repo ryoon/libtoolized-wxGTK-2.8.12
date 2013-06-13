@@ -296,10 +296,10 @@ svgdll_version_rc.lo: $(srcdir)/../../../src/msw/version.rc $(SVGDLL_ODEP)
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1)   $(__EXCEPTIONS_DEFINE_p_1) $(__RTTI_DEFINE_p_1) $(__THREAD_DEFINE_p_1)   --define WXBUILDING --define WXDLLNAME=$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_svg$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG) $(__RCDEFDIR_p) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define WXUSINGDLL --define WXMAKINGDLL_SVG
 
 svgdll_dcsvg.lo: $(srcdir)/dcsvg.cpp $(SVGDLL_ODEP)
-	$(CXXC) -c -o $@ $(SVGDLL_CXXFLAGS) $(srcdir)/dcsvg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(SVGDLL_CXXFLAGS) $(srcdir)/dcsvg.cpp
 
 svglib_dcsvg.lo: $(srcdir)/dcsvg.cpp $(SVGLIB_ODEP)
-	$(CXXC) -c -o $@ $(SVGLIB_CXXFLAGS) $(srcdir)/dcsvg.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(SVGLIB_CXXFLAGS) $(srcdir)/dcsvg.cpp
 
 
 # Include dependency info, if present:

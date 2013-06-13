@@ -185,7 +185,7 @@ checklst$(EXEEXT): $(CHECKLST_OBJECTS) $(__checklst___win32rc)
 @COND_PLATFORM_MACOSX_1@checklst_bundle: $(____checklst_BUNDLE_TGT_REF_DEP)
 
 checklst_checklst.lo: $(srcdir)/checklst.cpp
-	$(CXXC) -c -o $@ $(CHECKLST_CXXFLAGS) $(srcdir)/checklst.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(CHECKLST_CXXFLAGS) $(srcdir)/checklst.cpp
 
 checklst_checklst_rc.lo: $(srcdir)/checklst.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_2)   $(__EXCEPTIONS_DEFINE_p_2) $(__RTTI_DEFINE_p_2) $(__THREAD_DEFINE_p_2)   --include-dir $(srcdir) $(__DLLFLAG_p_2) --include-dir $(srcdir)/../../samples $(__RCDEFDIR_p_1) --include-dir $(top_srcdir)/include

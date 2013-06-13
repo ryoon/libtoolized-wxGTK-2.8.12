@@ -442,31 +442,31 @@ data_files:
 	done
 
 fl_demo1_fl_demo1.lo: $(srcdir)/fl_demo1.cpp
-	$(CXXC) -c -o $@ $(FL_DEMO1_CXXFLAGS) $(srcdir)/fl_demo1.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FL_DEMO1_CXXFLAGS) $(srcdir)/fl_demo1.cpp
 
 fl_demo1_fl_demo1_rc.lo: $(srcdir)/fl_demo1.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1_3)   $(__EXCEPTIONS_DEFINE_p_1_3) $(__RTTI_DEFINE_p_1_3) $(__THREAD_DEFINE_p_1_3)   --include-dir $(srcdir) $(__DLLFLAG_p_1_3) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_12) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define BMP_DIR="bitmaps/"
 
 fl_demo2_fl_demo2.lo: $(srcdir)/fl_demo2.cpp
-	$(CXXC) -c -o $@ $(FL_DEMO2_CXXFLAGS) $(srcdir)/fl_demo2.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FL_DEMO2_CXXFLAGS) $(srcdir)/fl_demo2.cpp
 
 fl_demo2_fl_demo2_rc.lo: $(srcdir)/fl_demo2.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1_3)   $(__EXCEPTIONS_DEFINE_p_1_3) $(__RTTI_DEFINE_p_1_3) $(__THREAD_DEFINE_p_1_3)   --include-dir $(srcdir) $(__DLLFLAG_p_1_3) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_12) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define BMP_DIR="bitmaps/"
 
 fl_sample1_fl_sample1.lo: $(srcdir)/fl_sample1.cpp
-	$(CXXC) -c -o $@ $(FL_SAMPLE1_CXXFLAGS) $(srcdir)/fl_sample1.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FL_SAMPLE1_CXXFLAGS) $(srcdir)/fl_sample1.cpp
 
 fl_sample1_fl_sample1_rc.lo: $(srcdir)/fl_sample1.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1_3)   $(__EXCEPTIONS_DEFINE_p_1_3) $(__RTTI_DEFINE_p_1_3) $(__THREAD_DEFINE_p_1_3)   --include-dir $(srcdir) $(__DLLFLAG_p_1_3) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_12) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define BMP_DIR="bitmaps/"
 
 fl_sample2_fl_sample2.lo: $(srcdir)/fl_sample2.cpp
-	$(CXXC) -c -o $@ $(FL_SAMPLE2_CXXFLAGS) $(srcdir)/fl_sample2.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FL_SAMPLE2_CXXFLAGS) $(srcdir)/fl_sample2.cpp
 
 fl_sample2_fl_sample2_rc.lo: $(srcdir)/fl_sample2.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1_3)   $(__EXCEPTIONS_DEFINE_p_1_3) $(__RTTI_DEFINE_p_1_3) $(__THREAD_DEFINE_p_1_3)   --include-dir $(srcdir) $(__DLLFLAG_p_1_3) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_12) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define BMP_DIR="bitmaps/"
 
 fl_sample3_fl_sample3.lo: $(srcdir)/fl_sample3.cpp
-	$(CXXC) -c -o $@ $(FL_SAMPLE3_CXXFLAGS) $(srcdir)/fl_sample3.cpp
+	 ${LIBTOOL} --mode=compile --tag=CXX $(CXXC) -c -o $@ $(FL_SAMPLE3_CXXFLAGS) $(srcdir)/fl_sample3.cpp
 
 fl_sample3_fl_sample3_rc.lo: $(srcdir)/fl_sample3.rc
 	$(WINDRES) -i$< -o$@    --define __WX$(TOOLKIT)__ $(__WXUNIV_DEFINE_p_1_3)   $(__EXCEPTIONS_DEFINE_p_1_3) $(__RTTI_DEFINE_p_1_3) $(__THREAD_DEFINE_p_1_3)   --include-dir $(srcdir) $(__DLLFLAG_p_1_3) --include-dir $(srcdir)/../../../samples $(__RCDEFDIR_p_12) --include-dir $(top_srcdir)/include --include-dir $(srcdir)/../../include --define BMP_DIR="bitmaps/"
