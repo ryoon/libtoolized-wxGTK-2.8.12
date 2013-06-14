@@ -1600,6 +1600,10 @@ LOCALE_MSW_LINGUAS =  it
 COND_wxUSE_REGEX_builtin___wxregex___depname = \
 	$(LIBDIRNAME)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE).la
 @COND_wxUSE_REGEX_builtin@__wxregex___depname = $(COND_wxUSE_REGEX_builtin___wxregex___depname)
+@COND_wxUSE_REGEX_builtin@__install_wxregex___depname \
+@COND_wxUSE_REGEX_builtin@    = install_wxregex
+@COND_wxUSE_REGEX_builtin@__uninstall_wxregex___depname \
+@COND_wxUSE_REGEX_builtin@    = uninstall_wxregex
 @COND_PLATFORM_OS2_1@__wxregex___importlib = -import \
 @COND_PLATFORM_OS2_1@  $(LIBPREFIX)wxregex.$(DLLIMP_SUFFIX)
 @COND_WINDOWS_IMPLIB_1@__wxregex___importlib = \
@@ -11822,12 +11826,12 @@ distclean: clean
 @COND_wxUSE_REGEX_builtin@$(LIBDIRNAME)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE).la: $(WXREGEX_OBJECTS)
 @COND_wxUSE_REGEX_builtin@	${LIBTOOL} --mode=link --tag=CC $(CC) -rpath $(libdir) -o $@ $(WXREGEX_OBJECTS)  $(__wxregex___importlib) -version-info 0:8:0
 
-@COND_SHARED_0_wxUSE_REGEX_builtin@install_wxregex: $(__wxregex___depname)
-@COND_SHARED_0_wxUSE_REGEX_builtin@	$(INSTALL_DIR) $(DESTDIR)$(libdir)
-@COND_SHARED_0_wxUSE_REGEX_builtin@	$(INSTALL_DATA) $(LIBDIRNAME)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE).la $(DESTDIR)$(libdir)
+@COND_wxUSE_REGEX_builtin@install_wxregex: $(__wxregex___depname)
+@COND_wxUSE_REGEX_builtin@	$(INSTALL_DIR) $(DESTDIR)$(libdir)
+@COND_wxUSE_REGEX_builtin@	$(INSTALL_DATA) $(LIBDIRNAME)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE).la $(DESTDIR)$(libdir)
 
-@COND_SHARED_0_wxUSE_REGEX_builtin@uninstall_wxregex: 
-@COND_SHARED_0_wxUSE_REGEX_builtin@	rm -f $(DESTDIR)$(libdir)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX)$(LIBEXT)
+@COND_wxUSE_REGEX_builtin@uninstall_wxregex: 
+@COND_wxUSE_REGEX_builtin@	rm -f $(DESTDIR)$(libdir)/$(LIBPREFIX)wxregex$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX)$(LIBEXT)
 
 @COND_wxUSE_ZLIB_builtin@$(LIBDIRNAME)/$(LIBPREFIX)wxzlib$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX)$(LIBEXT): $(WXZLIB_OBJECTS)
 @COND_wxUSE_ZLIB_builtin@	${LIBTOOL} --mode=link --tag=CC $(CC) -o $@ $(WXZLIB_OBJECTS)
